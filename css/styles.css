@@ -200,7 +200,7 @@ img {
   border-bottom: 24px solid white;
   border-left: 24px solid transparent;
   position: absolute;
-  top:  calc(60px);
+  top:  calc(54px);
   right: calc(23px);
 }
 
@@ -260,27 +260,74 @@ img {
 }
 
 
-@media only screen and (min-width: 540px) {
+.grid-gallery__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-  .site-nav {
-    padding: 40px 20px;
-    text-align: center;
-    color: var(--white-color);
-    background-color: transparent;
-  }
+.gallery__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  .site-nav__list {
-    list-style-type: none;
-    padding-top: 34px;
+}
 
-  }
+.gallery__heading {
+  margin: 0;
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: -0.228571px;
+  color: #24303E;
+  width: 327px;
+}
 
-  
+.gallery__desc {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.128571px;
+  color: #808397;
+  width: 327px;
 }
 
 
+.gallery__link {
+  font-family: "Fraunces" ;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24303E;
+  text-decoration: none;
+
+}
+
+.gallery__link::after {
+  content: "";
+  height:10px ;
+  display: block;
+  background: #FAD400;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  border-radius: 28px;
+
+}
 
 
+.gallery__item {
+  
+}
 
 @media only screen and (min-width: 540px) {
   
@@ -294,14 +341,28 @@ img {
   }
 
   .site-header {
-    padding-bottom: 52px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
+  .contact__link {
+    padding: 15px 30px;
+    font-family: var(--fraunces-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.107143px;
+    text-transform: uppercase;
+    color: #24303E;
+    background-color: rgb(141, 217, 243);
+    border-radius: 28px;
+  }
+  
+
   .wrapper {
-    background-image: url(../images/hero_desk@2x.png);
+    background-image: url(../images/hero_desk.png);
     min-width: 100%;
     height: auto;
     background-size: cover;
@@ -313,6 +374,12 @@ img {
     background-color: transparent;
   }
 
+  .site-header__logo {
+    width: 170px;
+    height: 33px;
+  }
+
+
   .site-nav {
     display: block;
     position: static;
@@ -323,6 +390,19 @@ img {
     width: auto;
   }
 
+
+  .site-nav {
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--white-color);
+    background-color: transparent;
+  }
+
+  .site-nav__list {
+    list-style-type: none;
+    padding-top: 34px;
+
+  }
   .site-nav__list {
     font-family: "Barlow";
     display: flex;
@@ -332,11 +412,12 @@ img {
 
   .site-nav__link {
     font-family: "Barlow";
-    font-size: 12px;
-    line-height: 15px;
-    letter-spacing: 0.923077px;
-    text-transform: uppercase;
-    color: var(--color-grey);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color:  #FFFFFF;
+    letter-spacing: -0.128571px;
   }
 
   .site-nav__item:not(:last-child) {
@@ -370,7 +451,7 @@ img {
     line-height: 48px;
     color: #FEFCF7;
     margin: 0;
-    width: 330px;
+    text-align: center;
   }
 
   .hero-desc {
@@ -413,11 +494,13 @@ img {
     font-family: "Fraunces";
     font-style: normal;
     font-weight: 900;
-    font-size: 72px;
-    line-height: 72px;
+    font-size: 56px;
+    line-height: 69px;
     color: #FEFCF7;
     margin: 0;
-    width: 493px;
+    text-align: center;
+    letter-spacing: 8.75px;
+    text-transform: uppercase;
   }
 
   .hero-desc {
@@ -434,6 +517,11 @@ img {
     width: 445px;
   }
 
+
+  .site-header__logo {
+    width: 170px;
+    height: 33px;
+  }
 }
 
 
