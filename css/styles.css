@@ -222,7 +222,6 @@ img {
   letter-spacing: 6.25px;
   text-transform: uppercase;
   color: #FFFFFF;
- 
 }
 
 .hero-desc {
@@ -302,10 +301,10 @@ img {
   }
 
   .wrapper {
-    background-image: url(../images/hero_desk.png);
-    width: 100%;
+    background-image: url(../images/hero_desk@2x.png);
+    min-width: 100%;
     height: auto;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 
