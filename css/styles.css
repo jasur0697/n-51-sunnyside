@@ -87,7 +87,7 @@ img {
   background-image: url(../images/hero_mob.png);
   background-size: contain;
   background-repeat: no-repeat;
-  padding-bottom: 538px;
+  padding-bottom: 260px;
   position: relative;
   z-index: 1;
 }
@@ -326,7 +326,23 @@ img {
 
 
 .gallery__item {
-  
+  height: 312px;
+}
+
+.brand { 
+
+}
+
+.brand::before {
+
+  background-image: url(../images/hero-egg-mob.png);
+  content: "";
+  display: block;
+  width: 100%;
+  height: 312px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 @media only screen and (min-width: 540px) {
